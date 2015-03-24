@@ -1,6 +1,6 @@
 <h1>Enter Players Names</h1>
 
-<form class="formHorizontal" name="pFrom" ng-controller="PlayCtrl as playctrl" ng-cloack="true">
+<form class="form-horizontal" name="pFrom" ng-controller="PlayCtrl as playctrl" ng-cloack="true">
   <div class="form-group">
     <label for="Player1" class="col-sm-2 control-label">Player 1 <br> {{playctrl.players[0].name}}</label>
     <div class="col-sm-10">
@@ -18,7 +18,7 @@
   <div class="form-group">
     <div class="col-sm-12">
       <a ng-href="#/start"
-         class="btn btn-primary btn-lg droneBtn"
+         class="btn btn-primary btn-lg drone-btn"
          ng-class="{disabled: playctrl.players[0].name === '' || playctrl.players[1].name === '' }"
          role="button" >
          Start

@@ -243,20 +243,20 @@ body, #screen{
     vertical-align: middle;
     width: 0;
 }
-#mainView {
+#main-view {
     background-color: rgba(0, 0, 0, 0.8);
     color: #f0f0f0;
     height: 100%;
     overflow: auto;
 }
-.no-rgba #mainView {
+.no-rgba #main-view {
     background-color: #000;
 }
 h1 {
     font-size: 2.8em;
     text-align: center;
 }
-.formHorizontal,.showResult {
+.form-horizontal,.show-result {
     margin: 40px auto 0;
     max-width: 60%;
 }
@@ -267,7 +267,7 @@ label {
 label[for="Player1"], label[for="Player2"] {
     min-height: 40px !important;
 }
-.droneBtn {
+.drone-btn {
     background-image: url("../img/btnMetal.jpg") !important;
     background-position: center center;
     background-repeat: no-repeat;
@@ -282,7 +282,7 @@ label[for="Player1"], label[for="Player2"] {
     text-shadow: 0 0 5px #000;
     background-color: none !important
 }
-.droneBtn:active{
+.drone-btn:active{
    background-color: none !important
    opacity: .6;
    outline: none !important;
@@ -295,10 +295,10 @@ input[type="text"] {
     color: #323232;
     font-family: inherit;
 }
-.selecWeapon select {
+.select-weapon select {
     margin-top: 25px;
 }
-.selecWeapon .droneBtn {
+.select-weapon .drone-btn {
     font-size: 1.8em;
     margin: 20px 0;
     width: 200px;
@@ -324,15 +324,15 @@ input[type="text"] {
     padding: 1px 5px;
     text-align: center;
 }
-.playerName {
+.player-name {
     font-size: 2em;
     margin-bottom: 0;
 }
-.theWinner {
+.the-winner {
     font-size: 2em;
     text-align: center;
 }
-.animateColor{
+.animate-color{
     -webkit-animation: color-change 2s infinite;
     -moz-animation: color-change 2s infinite;
     -o-animation: color-change 2s infinite;
@@ -364,7 +364,7 @@ input[type="text"] {
     50% { color: red; }
     100% { color: white; }
 }
-div#historyTable {
+div#history-table {
     background-color: #fff;
     bottom: 20px;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
@@ -373,10 +373,10 @@ div#historyTable {
     right: -300px;
     z-index: 100;
 }
-#historyTable table {
+#history-table table {
     width: 200px;
 }
-#historyTable > #closer {
+#history-table > #closer {
     background-color: #fff;
     cursor: pointer;
     display: inline-block;
@@ -398,7 +398,7 @@ div#historyTable {
     top: 10px;
     z-index: 100;
 }
-#historyTable > a {
+#history-table > a {
     display: block;
     font-family: verdana;
     font-size: 0.8em;

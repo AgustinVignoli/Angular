@@ -1,11 +1,9 @@
-
-<form class="form-horizontal selecWeapon" role="form" ng-controller="PlayCtrl as playctrl" >
-
+<form class="form-horizontal select-weapon" role="form" ng-controller="PlayCtrl as playctrl" >
     <h1>Round {{playctrl.rounds}}</h1>
 
     <fieldset class="form-group">
       <div class="col-xs-12 col-sm-5">
-        <h3 class="playerName">{{playctrl.players[0].name}}</h3>
+        <h3 class="player-name">{{playctrl.players[0].name}}</h3>
         <h4>Select an option</h4>        
       </div>
       <div class="col-xs-12 col-sm-7">
@@ -18,7 +16,7 @@
       </div>      
     </fieldset>
 
-    <a class="btn btn-primary droneBtn" ng-class="{disabled: playctrl.players[0].chose === 'Options'}" role="button" ng-href="#/player2">Ready</a>
+    <a class="btn btn-primary drone-btn" ng-class="{disabled: playctrl.players[0].chose === 'Options'}" role="button" ng-href="#/player2">Ready</a>
 
     <table class="table table-striped" ng-show="playctrl.rounds > 1">
       <tbody>
@@ -42,4 +40,3 @@
       </tbody>
     </table>
 </form>
-
