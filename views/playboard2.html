@@ -1,0 +1,46 @@
+
+<form class="form-horizontal selecWeapon" role="form" ng-controller="PlayCtrl as playctrl" >
+
+    <h1>Round {{playctrl.rounds}}</h1>
+
+    <fieldset class="form-group row">
+      <div class="col-xs-12 col-sm-5">
+        <h3 class="playerName">{{playctrl.players[1].name}}</h3>
+        <h4>Select an option</h4>        
+      </div>
+      <div class="col-xs-12 col-sm-7">
+        <select ng-model="playctrl.players[1].chose" ng-init="playctrl.players[1].chose ='Options'" class="form-control">
+          <option ng-value="Options" disabled>Options</option>
+          <option ng-value="Rock" >Rock</option>
+          <option ng-value="Paper">Paper</option>
+          <option ng-value="Scissors">Scissors</option>      
+        </select>
+      </div>      
+    </fieldset>
+
+    <a class="btn btn-primary droneBtn" ng-class="{disabled: playctrl.players[1].chose === 'Options'}" role="button" ng-click="playctrl.battle()">Ready</a>
+
+
+    <table class="table table-striped" ng-show="playctrl.rounds > 1"> 
+      <tbody>
+        <tr>
+          <th colspan="2">
+            <h3>Score: <span id="score">{{playctrl.players[1].wins}}</span></h3>
+          </th>
+        </tr>
+        <tr>
+          <th>Round</th>
+          <th>Winner</th>
+        </tr>
+        <tr ng-repeat="round in playctrl.winners">
+          <td>
+            <span id="round">{{round.round}}</span>
+          </td>
+          <td>
+            <span id="winner">{{round.name}}</span>    
+          </td>
+        </tr>        
+      </tbody>
+    </table>
+</form>
+
