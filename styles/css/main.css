@@ -368,6 +368,7 @@ div#history-table {
     background-color: #fff;
     bottom: 20px;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+	display:none;
     padding: 20px 50px;
     position: fixed;
     right: -300px;
