@@ -7,23 +7,23 @@
 	  $routeProvider
 	    .when('/', {
 	      controller:'PlayCtrl',
-	      templateUrl:'/Entrega/views/selectPlayer.html'
+	      templateUrl:'/views/selectPlayer.html'
 	    })	  
 	    .when('/start', {
 	      controller:'PlayCtrl',
-	      templateUrl:'/Entrega/views/playboard1.html'
+	      templateUrl:'/views/playboard1.html'
 	    })
 	    .when('/player2', {
 	      controller:'PlayCtrl',
-	      templateUrl:'/Entrega/views/playboard2.html'
+	      templateUrl:'/views/playboard2.html'
 	    })
 	    .when('/result', {
 	      controller:'PlayCtrl',
-	      templateUrl:'/Entrega/views/result.html'
+	      templateUrl:'/views/result.html'
 	    })
 	    .when('/again', {
 	      controller:'PlayCtrl',
-	      templateUrl:'/Entrega/views/playboard1.html'
+	      templateUrl:'/views/playboard1.html'
 	    })	    		    	    
         .otherwise({
             redirectTo: '/'
